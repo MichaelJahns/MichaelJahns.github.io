@@ -1,0 +1,37 @@
+body
+{
+    background-color: darkslategray;
+
+}
+h1
+{
+    font-size: 3.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2em;
+    text-align: center;
+    box-shadow: 20em 100%;
+    background-color: grey;
+    border: ridge black 0.10em;
+    width: 100%;
+}
+h2
+{
+    font-size: 3.0em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2~div
+{
+    text-align: center;
+}
+h2
+{
+
+}
+img
+{
+    background-position: center;
+    width: 300px;
+    rotate: 90%;
+    border: solid red;
+    align: center;
+}
