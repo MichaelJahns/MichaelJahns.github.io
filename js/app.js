@@ -65,7 +65,24 @@ function Question2(cnum)
     }
 }
 //Question three
-
+function Question3(dnum)
+{
+    if (dnum == 1)
+    {
+        var feedback = "Oh My Goodness! I like you.";
+        document.getElementById("questionThreeFeedback").innerHTML = feedback
+    }
+    if (dnum == 2)
+    {
+        var feedback = "Wow! You really think so?";
+        document.getElementById("questionThreeFeedback").innerHTML = feedback
+    }
+    if (dnum == 3)
+    {
+        var feedback = "Come now, don't be greedy.";
+        document.getElementById("questionThreeFeedback").innerHTML = feedback
+    }
+}
 
 //WOWZA counter
 function Counter()

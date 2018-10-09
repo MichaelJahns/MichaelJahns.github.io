@@ -29,6 +29,15 @@ h2
 {
 
 }
+h3
+{
+
+
+}
+h3>p
+{
+
+}
 img
 {
     display: block;
@@ -36,15 +45,35 @@ img
     margin-bottom: 75px;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 20%;
     transform: rotate(270deg);
     border: ridge black .5em;
     }
 button
 {
+    
     padding: .75em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-right: 20%;
+    margin-left: 5%;
+    width: 33%
+
     align-content: center;
     background-color: slategrey;
     border: color black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.wow
+{
+    margin-left: 48%;
+    background-color: black;
+    border: ridge pink 5px;
+    color:pink;
+}
+.wow:hover
+{
+    background-color: pink;
+    border: ridge black 5px;
+    color: black;
 }
