@@ -31,9 +31,20 @@ h2
 }
 img
 {
-    background-position: center;
-    width: 300px;
-    rotate: 90%;
-    border: solid red;
-    align: center;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    transform: rotate(270deg);
+    border: ridge black .5em;
+    }
+button
+{
+    padding: .75em;
+    align-content: center;
+    background-color: slategrey;
+    border: color black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

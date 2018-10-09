@@ -12,7 +12,7 @@ document.getElementById("username").innerHTML = user;
 console.log("The user input their name as " + user + ".s");
 
 
-//Question One
+//Question Gate
 var gate = prompt(' Well, ' + user + '! Are you ready to be dazzled!?').toLowerCase();
 
 if (gate.toLowerCase() === "yes" || gate.toLowerCase() === "y")
@@ -26,11 +26,28 @@ alert("TOO BAD!");
 console.log(user + " is not ready.");
 };
 
+//Question one
+function Question1(bnum)
+{
+    if (bnum == 1)
+    {
+        var feedback = "Nice one dumby";
+        document.getElementById("questionOneFeedback").innerHTML = feedback
+    }
+    if (bnum == 2)
+    {
+        var feedback = "Almost";
+        document.getElementById("questionOneFeedback").innerHTML = feedback
+    }
+    if (bnum == 3)
+    {
+        var feedback = "Nioce!";
+        document.getElementById("questionOneFeedback").innerHTML = feedback
+    }
+}
 //Question two
 
 //Question three
-
-//Question four
 
 
 //WOWZA counter
