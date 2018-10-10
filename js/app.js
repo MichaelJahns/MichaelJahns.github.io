@@ -84,6 +84,24 @@ function Question3(dnum)
     }
 }
 
+function Question4(fnum)
+{
+    if (fnum == 1)
+    {
+        var feedback = "*incorrect, but really who cares? the difference is so minor.*";
+        document.getElementById("questionFourFeedback").innerHTML = feedback
+    }
+    if (fnum == 2)
+    {
+        var feedback = "*Correct!*";
+        document.getElementById("questionFourFeedback").innerHTML = feedback
+    }
+    if (fnum == 3)
+    {
+        var feedback = "*What I look like? A hippie?*";
+        document.getElementById("questionFourFeedback").innerHTML = feedback
+    }
+}
 //WOWZA counter
 function Counter()
 {
