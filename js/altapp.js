@@ -230,3 +230,6 @@ for(var q7AttemptsLeft = 6; q7AttemptsLeft >= 0; q7AttemptsLeft--){
         }
        
     }
+//Updates the HTML Scoreboard
+document.getElementById("finalScore").innerHTML = correctAnswers;
+document.getElementById("totalAttempts").innerHTML = totalAttempts;

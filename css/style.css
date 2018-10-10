@@ -1,110 +1,83 @@
-body
+*
+{
+    background-color:rgb(73, 73, 83);
+}
+.title
+{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-block-end: 30px;
+    font-size: 60px;
+    text-align: center;
+    min-height: 125px;
+    background-color:darkslategray;
+    border:black ridge 5px;
+    border-radius: 22px;
+    box-shadow: 10px 10px 5px gray;
+    padding:10px;
+}
+.username
 {
     background-color: darkslategray;
 
 }
-h1
+#scoreboard
 {
-    font-size: 3.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2em;
-    text-align: center;
-    box-shadow: 20em 100%;
-    background-color: grey;
-    border: ridge black 0.10em;
-    width: 100%;
-}
-h2
-{
-    font-size: 2.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration: italic;
-}
-h2~div
-{
-    text-align: center;
-}
-h2
-{
-
+    opacity: .7;
+    margin-left:  auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 70%;
+    border: yellow 5px dotted;
 }
 h3
 {
-    display:inline;
-    font-size: 2em;
-    padding: 20px;
-    text-decoration: underline;
-}
-h3+p
-{
-    padding-left: 50px;
-    font-size: 1.75em;
-    color: black;
-}
-h4
-{
-    text-align:center;
-    color:darkblue;
-    font-size:2em;
-    text-decoration: underline;
+text-align:left;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 20px;
 
 }
-#biotag
+h5
 {
-    padding-left: 50px;
+    text-decoration: underline;
     text-align: left;
-    font-size: 1.25em;
+    margin-left: 10%;
+    width:auto;
+    font-size: 30px;
+    clear: both;
+    float: left;
 }
-p
+h6
 {
-    text-align:center;
-    color:black;
-    font-size: 1.5em;
+    text-align: left;
+    margin-left: 15%;
+    width: auto;
+    clear: both;
+    float: left;
+    font-size: 22px;
 }
-#questionOneFeedback, #questionTwoFeedback, #questionThreeFeedback, #questionFourFeedback
+.returnAnswers
 {
-    color:pink;
-    weight: bold;
-
-
+    color: rgb(35, 9, 129);
+    font-size: 20px;
+    margin-left: 20%;
+    font-weight: bold;
+}
+#checkBoard
+{
+    position: absolute;
+    margin-left: 20%;
+    width: 30px;
+    height: 100%;
+    border: red dotted 5px;
 }
 img
 {
+    height: 30px;
     display: block;
-    margin-top: 50px;
-    margin-bottom: 75px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    transform: rotate(270deg);
-    border: ridge black .5em;
+    margin-top: 30px;
 }
-button
+img:first-child
 {
-    
-    padding: .75em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    margin-right: 20%;
-    margin-left: 5%;
-    width: 33%
-
-    align-content: center;
-    background-color: slategrey;
-    border: color black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.wow
-{
-    margin-left: 48%;
-    background-color: black;
-    border: ridge pink 5px;
-    color:pink;
-}
-.wow:hover
-{
-    background-color: pink;
-    border: ridge black 5px;
-    color: black;
+    margin-top: 0px;
 }
