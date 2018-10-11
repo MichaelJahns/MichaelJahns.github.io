@@ -129,6 +129,7 @@ for(var q3AttemptsLeft = 6; q3AttemptsLeft >= 0; q3AttemptsLeft--)
 }
 q3run();
 // Question Four
+function q4run() {
 for(var q4AttemptsLeft = 6; q4AttemptsLeft >= 0; q4AttemptsLeft--){
     var q4 = prompt('Okay, here is a toughie ' + user + '. What did Michael J claim was his favorite color as a child?').toLowerCase();
     
@@ -157,6 +158,8 @@ for(var q4AttemptsLeft = 6; q4AttemptsLeft >= 0; q4AttemptsLeft--){
         }
        
     }
+}
+q4run();
 // Question Five
 for(var q5AttemptsLeft = 6; q5AttemptsLeft >= 0; q5AttemptsLeft--){
     var q5 = prompt(" Let's get to the fun stuff " + user + ".. Can you name one of Michael J's favorite three swear words.").toLowerCase();
