@@ -15,3 +15,9 @@ https://stackoverflow.com/questions/20383622/width-equal-to-content
 
 Help wtih array checking
 https://www.w3schools.com/jsref/jsref_includes_array.asp
+
+Pair Coding 201: 10/11/2018
+
+Driver: Jeff Mullen
+Navigator: Michael Jahns
+Observer: Angel Blas
