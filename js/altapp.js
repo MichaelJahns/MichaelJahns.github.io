@@ -193,6 +193,7 @@ for(var q5AttemptsLeft = 6; q5AttemptsLeft >= 0; q5AttemptsLeft--){
 }
 q5run();
 // Question Six
+function q6run() {
 for(var q6AttemptsLeft = 6; q6AttemptsLeft >= 0; q6AttemptsLeft--){
     var q6 = prompt('Ramping down ' + user + '. How many times has Michael J cried last month?').toLowerCase();
     
@@ -227,6 +228,8 @@ for(var q6AttemptsLeft = 6; q6AttemptsLeft >= 0; q6AttemptsLeft--){
         }
        
     }
+}
+q6run();
 // Question Seven
 for(var q7AttemptsLeft = 6; q7AttemptsLeft >= 0; q7AttemptsLeft--){
     var q7 = prompt('Last Question ' + user + '. And this is the big one. Would you recommend Michael J to a friend?').toLowerCase();
