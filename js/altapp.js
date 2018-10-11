@@ -73,7 +73,7 @@ function q2run() {
         totalAttempts++;
         correctAnswers++;
         alert("That is correct " + user + "!! Michael J has ten beautifully kept and maintained fingers.?");
-        console.log(user + " is correct!!"+ user + " has submitted " + q1 + " as their answer");
+        console.log(user + " is correct!!"+ user + " has submitted " + q2 + " as their answer");
         q2AttemptsLeft = 0;
         document.getElementById("q2CheckBoard").src = "img/Right.png"
       }
@@ -81,13 +81,13 @@ function q2run() {
       {   
         totalAttempts++;
         alert("Nope! Your guess was too high. Go ahead and guess again, you've " + q2AttemptsLeft + " left.");
-        console.log(user + " is incorrect."+ user + " has submitted " + q1 + " as their answer and has " + q2AttemptsLeft + " left.");
+        console.log(user + " is incorrect."+ user + " has submitted " + q2 + " as their answer and has " + q2AttemptsLeft + " left.");
       }
       if(q2 < 10)
       {
         totalAttempts++;
         alert("Wrong! Your guess is too low, try again, you've " + q2AttemptsLeft + " left.");
-        console.log(user + " is incorrect."+ user + " has submitted " + q1 + " as their answer and has " + q2AttemptsLeft + " left.");
+        console.log(user + " is incorrect."+ user + " has submitted " + q2 + " as their answer and has " + q2AttemptsLeft + " left.");
       }
     }
        
@@ -172,7 +172,7 @@ function q5run() {
     }
     else
     {
-      if(q5 === 'heck' || q1 === "pumpkin head" || q1=== "yikes")
+      if(q5 === 'heck' || q5 === "pumpkin head" || q5=== "yikes")
       {
         totalAttempts++;
         correctAnswers++;
