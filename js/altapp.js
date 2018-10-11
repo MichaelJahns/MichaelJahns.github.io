@@ -25,6 +25,7 @@ var gate = prompt(' Well, ' + user + '! Are you ready to be tested!?').toLowerCa
 var totalAttempts = 0;
 var correctAnswers = 0;
 // Question One
+function q1run() {
 for(var q1AttemptsLeft = 6; q1AttemptsLeft >= 0; q1AttemptsLeft--){
 var q1 = prompt('Your first question ' + user + ' Where did the Illustrious Michael J attend College?').toLowerCase();
 
@@ -53,6 +54,8 @@ var q1 = prompt('Your first question ' + user + ' Where did the Illustrious Mich
     }
    
 }
+}
+q1run();
 // //Question Two
 for(var q2AttemptsLeft = 3; q2AttemptsLeft >= 0; q2AttemptsLeft--){
     var q2 = Number(prompt('Next question ' + user + '. How many fingers does Michael J have?').toLowerCase());
