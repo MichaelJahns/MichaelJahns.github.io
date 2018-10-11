@@ -95,6 +95,7 @@ for(var q2AttemptsLeft = 3; q2AttemptsLeft >= 0; q2AttemptsLeft--){
 }
 q2run();
 //Question Three
+function q3run() {
 var words = ["maelstrom", "doody", "phantasmagoric", "chaos", "buttress", "olive", "fjord"]
 for(var q3AttemptsLeft = 6; q3AttemptsLeft >= 0; q3AttemptsLeft--)
 {
@@ -125,6 +126,8 @@ for(var q3AttemptsLeft = 6; q3AttemptsLeft >= 0; q3AttemptsLeft--)
         }
        
     }
+}
+q3run();
 // Question Four
 for(var q4AttemptsLeft = 6; q4AttemptsLeft >= 0; q4AttemptsLeft--){
     var q4 = prompt('Okay, here is a toughie ' + user + '. What did Michael J claim was his favorite color as a child?').toLowerCase();
