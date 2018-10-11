@@ -58,20 +58,20 @@
     position: relative;
     margin-left: auto;
     margin-right: 5%;
-    margin-top: 30px;
+    margin-top: 40px;
     height: 70%;
     transform: rotate(270deg);
     border: ridge gray 7px;
     float: left;
-    color: inherit;
+    background-color: inherit;
 }
 h4
 {
     font-size: 30px;
     text-decoration: underline;
     font-weight: bold;
-    color: rgb(150, 150, 150);
-
+    background-color:inherit;
+    text-align: center;
 }
 ul
 {
@@ -79,19 +79,20 @@ ul
     text-align: left;
     font-size: 20px;
     padding: 5px;
-    color: rgb(150, 150, 150);
-
+    background-color: inherit;
+    list-style-type: square;
 }
 li
 {
-    color: rgb(150, 150, 150);
+    background-color: inherit;
 }
 ol
 {
     list-style-type: decimal;
     padding: 5px;
-    margin-left: 5%;
+    margin-left: 10%;
     text-align: left;
     font-size: 20px;
-    color: rgb(150, 150, 150);
+    background-color: rgb(150, 150, 150);
+    background-color: inherit;
 }
