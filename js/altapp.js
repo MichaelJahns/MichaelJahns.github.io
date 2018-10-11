@@ -161,6 +161,7 @@ for(var q4AttemptsLeft = 6; q4AttemptsLeft >= 0; q4AttemptsLeft--){
 }
 q4run();
 // Question Five
+function q5run() {
 for(var q5AttemptsLeft = 6; q5AttemptsLeft >= 0; q5AttemptsLeft--){
     var q5 = prompt(" Let's get to the fun stuff " + user + ".. Can you name one of Michael J's favorite three swear words.").toLowerCase();
     
@@ -189,6 +190,8 @@ for(var q5AttemptsLeft = 6; q5AttemptsLeft >= 0; q5AttemptsLeft--){
         }
        
     }
+}
+q5run();
 // Question Six
 for(var q6AttemptsLeft = 6; q6AttemptsLeft >= 0; q6AttemptsLeft--){
     var q6 = prompt('Ramping down ' + user + '. How many times has Michael J cried last month?').toLowerCase();
