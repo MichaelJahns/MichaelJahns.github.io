@@ -12,3 +12,6 @@ https://stackoverflow.com/questions/18410341/using-multiple-buttons-on-same-func
 
 Help with getting html elements to be the same size as their contents
 https://stackoverflow.com/questions/20383622/width-equal-to-content
+
+Help wtih array checking
+https://www.w3schools.com/jsref/jsref_includes_array.asp

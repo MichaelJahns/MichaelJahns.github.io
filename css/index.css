@@ -1,0 +1,61 @@
+*
+{
+    background-color:rgb(73, 73, 83);
+}
+.title
+{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-block-end: 30px;
+    font-size: 60px;
+
+    min-height: 125px;
+    background-color:darkslategray;
+    border:black ridge 5px;
+    border-radius: 22px;
+    box-shadow: 10px 10px 5px gray;
+    padding:10px;
+}
+#GoodBoi
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 30px;
+    height: 300px;
+    transform: rotate(270deg);
+    border: ridge gray 7px;
+    float: left;
+    }
+#biotag
+{
+    float:left;
+    display: inline-block;
+}
+#Block1
+{
+   height: 50%;
+   border: red dotted 20px;
+   width: 100%;
+}
+p
+{
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+ul
+{
+    margin-left: 5%;
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+
+}
+ol
+{
+    list-style-type: decimal;
+    padding: 5px;
+    /* margin-left: 20px; */
+}

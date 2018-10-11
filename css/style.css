@@ -55,6 +55,7 @@ h6
     clear: both;
     float: left;
     font-size: 22px;
+    z-index: 1;
 }
 .returnAnswers
 {
@@ -76,8 +77,20 @@ img
     height: 30px;
     display: block;
     margin-top: 30px;
+    float: left;
 }
 img:first-child
 {
     margin-top: 0px;
+}
+#idbox
+{
+    border: red 7px dotted;
+    margin-left: 30%;
+    text-align: left;
+}
+#idbox~h6
+{
+    text-align: left;
+    margin-left: 5%;
 }
