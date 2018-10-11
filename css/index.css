@@ -5,13 +5,13 @@
 .title
 {
     margin-right: 10%;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-block-end: 30px;
     font-size: 60px;
-
+    text-align: center;
     min-height: 125px;
     background-color:darkslategray;
-    border:black ridge 5px;
+    border:rgb(17, 17, 17) ridge 5px;
     border-radius: 22px;
     box-shadow: 10px 10px 5px gray;
     padding:10px;
@@ -21,7 +21,7 @@
    height: 320px;
    width: 80%;
    float: left;
-   margin-left: 10%;
+   margin-left: 15%;
    margin-right: 5%;
    margin-top: 30px;
    background-color: rgb(150, 150, 150);
@@ -34,7 +34,7 @@
    height: 320px;
    width: 80%;
    float: left;
-   margin-left: 10%;
+   margin-left: 15%;
    margin-right: 5%;
    margin-top: 30px;
    background-color: rgb(114, 114, 114);
@@ -46,32 +46,69 @@
    height: 320px;
    width: 80%;
    float: left;
-   margin-left: 10%;
+   margin-left: 15%;
    margin-right: 5%;
    margin-top: 30px;
    background-color: rgb(158, 158, 158);
    border: solid black 7px;
    box-shadow: 0px 10px 10px 5px rgb(53, 53, 53);
 }
+#navigation
+{
+   position: fixed;   
+   height: 75%;
+   width: 10%;
+   float: left;
+   margin-left: 1%;
+   margin-right: auto;
+   top: 70px;
+   background-color: rgb(158, 158, 158);
+   border: solid black 7px;
+   border-radius: 20px 20px 20px 20px;
+   box-shadow: 0px 10px 10px 5px rgb(53, 53, 53);
+}
+#navigation > button
+{
+    margin-left:  5%;
+    margin-right: auto;
+    margin-top:  7%;
+    width: 90%;
+    height: 60px;
+    text-decoration: none;
+    background-color: rgb(199, 199, 199);
+    border: ridge rgb(104, 104, 104) 5px;
+}
+a
+{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    background-color: inherit;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 #GoodBoi
 {
     position: relative;
     margin-left: auto;
     margin-right: 5%;
-    margin-top: 40px;
-    height: 70%;
+    margin-top: 5%;
+    height: 65%;
     transform: rotate(270deg);
-    border: ridge gray 7px;
+    border: double black 7px;
+    border-style: double;
     float: left;
     background-color: inherit;
 }
 h4
 {
+    margin-left: 30%;
+    margin-top: 20px;
     font-size: 30px;
     text-decoration: underline;
     font-weight: bold;
     background-color:inherit;
-    text-align: center;
+    text-align: left;
 }
 ul
 {
