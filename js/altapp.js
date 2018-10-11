@@ -52,32 +52,33 @@ var q1 = prompt('Your first question ' + user + ' Where did the Illustrious Mich
             console.log(user + " is incorrect."+ user + " has submitted " + q1 + " as their answer and has " + q1AttemptsLeft + " left.");
         }
     }
-   
+    
 }
 }
 q1run();
-// //Question Two
+// Question Two
+function q2run() {
 for(var q2AttemptsLeft = 3; q2AttemptsLeft >= 0; q2AttemptsLeft--){
     var q2 = Number(prompt('Next question ' + user + '. How many fingers does Michael J have?').toLowerCase());
     
-        if(q2AttemptsLeft === 0)
+    if(q2AttemptsLeft === 0)
+    {
+        alert("Oh! I'm sorry " + user + " you are incorrect, and you have used all of your guesses. Michael just has the usual ten fingers. He's nothing special.)");
+        document.getElementById("q2CheckBoard").src = "img/Wrong.png"
+    }
+    else
+    {
+        if(q2 === 10)
         {
-            alert("Oh! I'm sorry " + user + " you are incorrect, and you have used all of your guesses. Michael just has the usual ten fingers. He's nothing special.)");
-            document.getElementById("q2CheckBoard").src = "img/Wrong.png"
+            totalAttempts++;
+            correctAnswers++;
+            alert("That is correct " + user + "!! Michael J has ten beautifully kept and maintained fingers.?");
+            console.log(user + " is correct!!"+ user + " has submitted " + q1 + " as their answer");
+            q2AttemptsLeft = 0;
+            document.getElementById("q2CheckBoard").src = "img/Right.png"
         }
-        else
-        {
-            if(q2 === 10)
-            {
-                totalAttempts++;
-                correctAnswers++;
-                alert("That is correct " + user + "!! Michael J has ten beautifully kept and maintained fingers.?");
-                console.log(user + " is correct!!"+ user + " has submitted " + q1 + " as their answer");
-                q2AttemptsLeft = 0;
-                document.getElementById("q2CheckBoard").src = "img/Right.png"
-            }
-            if(q2 > 10)
-            {   
+        if(q2 > 10)
+        {   
                 totalAttempts++;
                 alert("Nope! Your guess was too high. Go ahead and guess again, you've " + q2AttemptsLeft + " left.");
                 console.log(user + " is incorrect."+ user + " has submitted " + q1 + " as their answer and has " + q2AttemptsLeft + " left.");
@@ -91,6 +92,8 @@ for(var q2AttemptsLeft = 3; q2AttemptsLeft >= 0; q2AttemptsLeft--){
         }
        
     }
+}
+q2run();
 //Question Three
 var words = ["maelstrom", "doody", "phantasmagoric", "chaos", "buttress", "olive", "fjord"]
 for(var q3AttemptsLeft = 6; q3AttemptsLeft >= 0; q3AttemptsLeft--)
