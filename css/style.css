@@ -76,7 +76,7 @@ a
     background-color: inherit;
 }
 
-#scoreboard
+/* #scoreboard
 {
     opacity: .7;
     margin-left:  40%;
@@ -84,7 +84,7 @@ a
     padding: 10px;
     width: auto;
     border: yellow 5px dotted;
-}
+} */
 #scoreboard > h3
 {
 text-align:center;

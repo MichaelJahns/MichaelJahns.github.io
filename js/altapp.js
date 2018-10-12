@@ -260,5 +260,5 @@ function q7run() {
   }
 }
 //Updates the HTML Scoreboard
-document.getElementById('finalScore').innerHTML = correctAnswers;
-document.getElementById('totalAttempts').innerHTML = totalAttempts;
+// document.getElementById('finalScore').innerHTML = correctAnswers;
+// document.getElementById('totalAttempts').innerHTML = totalAttempts;
