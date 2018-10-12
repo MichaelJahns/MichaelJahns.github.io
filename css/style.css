@@ -71,23 +71,23 @@ a
 {
     height:18%;
 }
-.username
+#user
 {
-    background-color: darkslategray;
+    background-color: inherit;
 }
 
 #scoreboard
 {
     opacity: .7;
-    margin-left:  17%;
-    margin-right: auto;
+    margin-left:  40%;
+    margin-right: 40%;
     padding: 10px;
-    width: 70%;
+    width: auto;
     border: yellow 5px dotted;
 }
 #scoreboard > h3
 {
-text-align:left;
+text-align:center;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 20px;
 }
