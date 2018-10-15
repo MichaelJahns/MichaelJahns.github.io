@@ -50,6 +50,7 @@ function q1run() {
         alert('I actually didnt go there. Go ahead and guess again, you\'ve ' + q1AttemptsLeft + ' left.');
         console.log(user + ' is incorrect.'+ user + ' has submitted ' + q1 + ' as their answer and has ' + q1AttemptsLeft + ' left.');
       }
+      document.getElementById('returnAnswer1').innerHTML = 'Washington State University, WSU, Washington State';
     }
 
   }
@@ -87,6 +88,7 @@ function q2run() {
         alert('Wrong! Your guess is too low, try again, you\'ve ' + q2AttemptsLeft + ' left.');
         console.log(user + ' is incorrect.'+ user + ' has submitted ' + q2 + ' as their answer and has ' + q2AttemptsLeft + ' left.');
       }
+      document.getElementById('returnAnswer2').innerHTML = '10';
     }
 
   }
@@ -120,6 +122,7 @@ function q3run() {
         alert('Michael J doesn\'t love that word, go ahead and guess again, you\'ve ' + q3AttemptsLeft + ' left.');
         console.log(user + ' is incorrect.'+ user + ' has submitted ' + q3 + ' as their answer and has ' + q3AttemptsLeft + ' left.');
       }
+      document.getElementById('returnAnswer3').innerHTML = 'Chaos, Doody, Olive, Maelstrom, Fjord, Phantasmagoric';
     }
 
   }
@@ -151,6 +154,7 @@ function q4run() {
         alert('Hard nope. You aren\'t going to get this one, you\'ve only ' + q4AttemptsLeft + ' left.');
         console.log(user + ' is incorrect.'+ user + ' has submitted ' + q4 + ' as their answer and has ' + q4AttemptsLeft + ' left.');
       }
+      document.getElementById('returnAnswer4').innerHTML = 'Rainbow';
     }
 
   }
@@ -182,6 +186,7 @@ function q5run() {
         alert('...no... just no. Yikes. ' + q5AttemptsLeft + ' left.');
         console.log(user + ' is incorrect.'+ user + ' has submitted ' + q5 + ' as their answer and has ' + q5AttemptsLeft + ' left.');
       }
+      document.getElementById('returnAnswer5').innerHTML = 'Heck, Pumpkin Head, Yikes' ;
     }
 
   }
@@ -195,6 +200,9 @@ function q6run() {
     {
       alert('You\'ve a rather warped opinion me of ' + user + '. No, Michael J has cried (just enough to be healthy but not enough to be excessive)');
       document.getElementById('q6CheckBoard').src = 'img/Wrong.png'
+      document.getElementById('finalScore').innerHTML = correctAnswers;
+      document.getElementById('totalAttempts').innerHTML = totalAttempts;
+      console.log('Users total correct answers is' + correctAnswers);
     }
     else
     {
@@ -206,6 +214,9 @@ function q6run() {
         console.log(user + ' is correct!!'+ user + ' has submitted ' + q6 + ' as their answer');
         q6AttemptsLeft = 0;
         document.getElementById('q6CheckBoard').src = 'img/Right.png'
+        document.getElementById('finalScore').innerHTML = correctAnswers;
+      document.getElementById('totalAttempts').innerHTML = totalAttempts;
+      console.log('Users total correct answers is' + correctAnswers);
       }
       if(q6 > 10)
       {
@@ -219,6 +230,7 @@ function q6run() {
         alert('What do you think Michael J is made of stone? Try agian ' + user + '.');
         console.log(user + ' is incorrect.'+ user + ' has submitted ' + q6 + ' as their answer and has ' + q6AttemptsLeft + ' left.');
       }
+      document.getElementById('returnAnswer6').innerHTML = 'Just enough to be healthy but not enough to be excessive';
     }
 
   }
@@ -231,7 +243,8 @@ function q7run() {
     if(q7AttemptsLeft === 0)
     {
       alert('No one will ever see this text ' + user + '. Its a secret song between you and I. I love you');
-      document.getElementById('q7CheckBoard').src = 'img/Wrong.png'
+      document.getElementById('q7CheckBoard').src = 'img/Wrong.png';
+      return totalAttempts, correctAnswers;
     }
     if(q7AttemptsLeft === 2)
     {
@@ -249,6 +262,7 @@ function q7run() {
         console.log(user + ' is correct!!'+ user + ' has submitted ' + q7 + ' as their answer');
         q7AttemptsLeft = 0;
         document.getElementById('q7CheckBoard').src = 'img/Right.png'
+        return totalAttempts, correctAnswers;
       }
       else
       {
@@ -256,9 +270,12 @@ function q7run() {
         alert('Careful user, you run the risk of hurting Michael J\'s feeling. Go ahead and try again '+ user + ', you\'ve ' + q7AttemptsLeft + ' left.');
         console.log(user + ' is incorrect.'+ user + ' has submitted ' + q7 + ' as their answer and has ' + q7AttemptsLeft + ' left.');
       }
+      document.getElementById('returnAnswer7').innerHTML = 'Yes';
+  
     }
   }
 }
 //Updates the HTML Scoreboard
-// document.getElementById('finalScore').innerHTML = correctAnswers;
-// document.getElementById('totalAttempts').innerHTML = totalAttempts;
+document.getElementById('finalScore').innerHTML = correctAnswers;
+document.getElementById('totalAttempts').innerHTML = totalAttempts;
+console.log(totalAttempts);
