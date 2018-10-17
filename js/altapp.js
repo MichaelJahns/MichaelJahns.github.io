@@ -249,7 +249,7 @@ function q7run() {
     if(q7AttemptsLeft === 2)
     {
       alert('You are not being kind, but I believe you could be if you tried. Here you are runnning low on guesses ' + user + '. have some more. *Guesses +7"* ');
-      q7AttemptsLeft += 7;
+      // q7AttemptsLeft += 7;
       console.log(user + ' is incorrect.'+ user + ' has submitted ' + q7 + ' as their answer and has ' + q7AttemptsLeft + ' left.');
     }
     else
