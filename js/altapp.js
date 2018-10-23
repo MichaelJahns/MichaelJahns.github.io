@@ -32,6 +32,7 @@ function q1run() {
     {
       alert('Oh! I\'m sorry ' + user + ' you are incorrect, and you have used all of your guesses. Acceptable answers were (wsu, washington state university, and washington state)');
       document.getElementById('q1CheckBoard').src = 'img/Wrong.png'
+      refreshPage()
     }
     else
     {
@@ -43,6 +44,7 @@ function q1run() {
         console.log(user + ' is correct!!'+ user + ' has submitted ' + q1 + ' as their answer');
         q1AttemptsLeft =0;
         document.getElementById('q1CheckBoard').src = 'img/Right.png'
+        refreshPage()
       }
       else
       {
@@ -64,6 +66,7 @@ function q2run() {
     {
       alert('Oh! I\'m sorry ' + user + ' you are incorrect, and you have used all of your guesses. Michael just has the usual ten fingers. He\'s nothing special.)');
       document.getElementById('q2CheckBoard').src = 'img/Wrong.png'
+      refreshPage()
     }
     else
     {
@@ -75,6 +78,7 @@ function q2run() {
         console.log(user + ' is correct!!'+ user + ' has submitted ' + q2 + ' as their answer');
         q2AttemptsLeft = 0;
         document.getElementById('q2CheckBoard').src = 'img/Right.png'
+        refreshPage()
       }
       if(q2 > 10)
       {
@@ -104,6 +108,7 @@ function q3run() {
     {
       alert('Oh! I\'m sorry ' + user + ' you failed to guess any of Michael J\s favorite words. Acceptable answers were (maelstrom, doody, phantasmagoric, chaos, buttress, olive, and fjord.)');
       document.getElementById('q3CheckBoard').src = 'img/Wrong.png'
+      refreshPage()
     }
     else
     {
@@ -115,6 +120,7 @@ function q3run() {
         console.log(user + ' is correct!!'+ user + ' has submitted ' + q3 + ' as their answer');
         document.getElementById('q3CheckBoard').src = 'img/Right.png'
         q3AttemptsLeft = 0;
+        refreshPage()
       }
       else
       {
@@ -136,6 +142,7 @@ function q4run() {
     {
       alert('Its okay ' + user + ' I didn\'t expect you to get it. Michael J\'s favorite color as a child was rainbow. Right? You werent going to get that.');
       document.getElementById('q4CheckBoard').src = 'img/Wrong.png'
+      refreshPage()
     }
     else
     {
@@ -147,6 +154,7 @@ function q4run() {
         console.log(user + ' is correct!!'+ user + ' has submitted ' + q4 + ' as their answer');
         q4AttemptsLeft = 0;
         document.getElementById('q4CheckBoard').src = 'img/Right.png'
+        refreshPage()
       }
       else
       {
@@ -168,6 +176,7 @@ function q5run() {
     {
       alert('You guessed a bunch of really foul stuff' + user + '... Michael J\'s favorite swear words are \'Heck, Pumpkin Head, and Darn Tooting\' in that order.\'');
       document.getElementById('q5CheckBoard').src = 'img/Wrong.png'
+      refreshPage()
     }
     else
     {
@@ -179,6 +188,7 @@ function q5run() {
         console.log(user + ' is correct!!'+ user + ' has submitted ' + q5 + ' as their answer');
         q5AttemptsLeft = 0;
         document.getElementById('q5CheckBoard').src = 'img/Right.png'
+        refreshPage()
       }
       else
       {
@@ -203,6 +213,7 @@ function q6run() {
       document.getElementById('finalScore').innerHTML = correctAnswers;
       document.getElementById('totalAttempts').innerHTML = totalAttempts;
       console.log('Users total correct answers is' + correctAnswers);
+      refreshPage()
     }
     else
     {
@@ -215,8 +226,9 @@ function q6run() {
         q6AttemptsLeft = 0;
         document.getElementById('q6CheckBoard').src = 'img/Right.png'
         document.getElementById('finalScore').innerHTML = correctAnswers;
-      document.getElementById('totalAttempts').innerHTML = totalAttempts;
-      console.log('Users total correct answers is' + correctAnswers);
+        document.getElementById('totalAttempts').innerHTML = totalAttempts;
+        console.log('Users total correct answers is' + correctAnswers);
+        refreshPage()
       }
       if(q6 > 10)
       {
@@ -244,14 +256,15 @@ function q7run() {
     {
       alert('No one will ever see this text ' + user + '. Its a secret song between you and I. I love you');
       document.getElementById('q7CheckBoard').src = 'img/Wrong.png';
+      refreshPage()
       return totalAttempts, correctAnswers;
     }
-    if(q7AttemptsLeft === 2)
-    {
-      alert('You are not being kind, but I believe you could be if you tried. Here you are runnning low on guesses ' + user + '. have some more. *Guesses +7"* ');
-      // q7AttemptsLeft += 7;
-      console.log(user + ' is incorrect.'+ user + ' has submitted ' + q7 + ' as their answer and has ' + q7AttemptsLeft + ' left.');
-    }
+    // if(q7AttemptsLeft === 2)
+    // {
+    //   alert('You are not being kind, but I believe you could be if you tried. Here you are runnning low on guesses ' + user + '. have some more. *Guesses +7"* ');
+    //   q7AttemptsLeft += 7;
+    //   console.log(user + ' is incorrect.'+ user + ' has submitted ' + q7 + ' as their answer and has ' + q7AttemptsLeft + ' left.');
+    // }
     else
     {
       if(q7 === 'yes' || q7 === 'y')
@@ -262,7 +275,9 @@ function q7run() {
         console.log(user + ' is correct!!'+ user + ' has submitted ' + q7 + ' as their answer');
         q7AttemptsLeft = 0;
         document.getElementById('q7CheckBoard').src = 'img/Right.png'
-        return totalAttempts, correctAnswers;
+        refreshPage();
+        return;
+        
       }
       else
       {
@@ -271,11 +286,14 @@ function q7run() {
         console.log(user + ' is incorrect.'+ user + ' has submitted ' + q7 + ' as their answer and has ' + q7AttemptsLeft + ' left.');
       }
       document.getElementById('returnAnswer7').innerHTML = 'Yes';
-  
+
     }
   }
+  
 }
 //Updates the HTML Scoreboard
-document.getElementById('finalScore').innerHTML = correctAnswers;
-document.getElementById('totalAttempts').innerHTML = totalAttempts;
-console.log(totalAttempts);
+function refreshPage(){
+  document.getElementById('finalScore').innerHTML = correctAnswers;
+  document.getElementById('totalAttempts').innerHTML = totalAttempts;
+  console.log(totalAttempts);
+}
